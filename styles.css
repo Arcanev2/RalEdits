@@ -1,0 +1,45 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: none;
+}
+
+.image-container img:first-child {
+	display: block;
+}
+
+.arrow-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.5);
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+#left-button {
+	left: 20px;
+}
+
+#right-button {
+	right: 20px;
+}
